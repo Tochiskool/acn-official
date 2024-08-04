@@ -1,7 +1,13 @@
 import React from "react";
+import Navtabs from "../../NavTabs/Navtabs";
 
 const Contacts = () => {
-  return <div>Contacts</div>;
+  return (
+    <>
+      <Navtabs />
+      Contacts
+    </>
+  );
 };
 
 export default Contacts;

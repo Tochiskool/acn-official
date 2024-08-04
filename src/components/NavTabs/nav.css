@@ -1,0 +1,40 @@
+/* header {
+  display: flex;
+  background: lightblue;
+  margin: 0;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.navContainer {
+  display: flex;
+  list-style-type: none;
+  width: 50%;
+  justify-content: space-between;
+}
+.navContainer a:hover {
+  background-color: brown;
+} */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: bisque;
+  padding: 1rem;
+}
+
+header .navContainer {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+.navChild {
+  list-style-type: none;
+}
+.navChild > a {
+  text-decoration: none;
+  padding: 1rem;
+}
+header .navContainer a:hover {
+  background-color: blue;
+}

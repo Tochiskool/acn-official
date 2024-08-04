@@ -1,7 +1,13 @@
 import React from "react";
+import Navtabs from "../../NavTabs/Navtabs";
 
 const About = () => {
-  return <div>About my App</div>;
+  return (
+    <>
+      <Navtabs />
+      About my App
+    </>
+  );
 };
 
 export default About;

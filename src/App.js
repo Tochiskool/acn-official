@@ -4,7 +4,6 @@ import About from "./components/pages/About/About";
 import Home from "./components/pages/Home/Home";
 import Contacts from "./components/pages/Contacts/Contacts";
 import Projects from "./components/pages/Projects/Projects";
-import ErrorPage from "./components/pages/ErrorPage/ErrorPage";
 
 const App = () => {
   return (
@@ -18,5 +17,4 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;
