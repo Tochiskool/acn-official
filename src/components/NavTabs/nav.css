@@ -1,4 +1,46 @@
-/* header {
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  position: relative;
+}
+.background-image {
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.imageStyle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.navContainer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.navContainer ul {
+  display: flex;
+  right: 60%;
+}
+ul li {
+  list-style: none;
+  justify-content: flex-end;
+}
+.navChild {
+  color: white;
+  padding: 1rem;
+  font-style: italic;
+}
+.bars {
+  display: none;
+}
+
+/* /* header {
   display: flex;
   background: lightblue;
   margin: 0;
@@ -14,17 +56,18 @@
 .navContainer a:hover {
   background-color: brown;
 } */
-
+/* 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 header .navContainer {
   display: flex;
-  width: 70%;
+  width: 40%;
   justify-content: space-between;
 }
 .navChild {
@@ -36,4 +79,4 @@ header .navContainer {
 }
 header .navContainer a:hover {
   background-color: blue;
-}
+} */

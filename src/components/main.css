@@ -1,0 +1,93 @@
+/* Imnports */
+@import url("https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
+/* Change all elements to use border-box */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Base CSS */
+body {
+  color: #414042;
+  font-family: "Gupter", serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+a {
+  color: #8dc63f;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Themes */
+.background-primary {
+  background: #c5f8a9; /*Orange*/
+}
+.background-secondary {
+  background: #00ef58; /*Blue*/
+}
+.background-tertiary {
+  background: #3a6004; /*Green*/
+}
+/* Layouts */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 48em) {
+  [class*="col"] {
+    float: left;
+  }
+  /* Column Third */
+  .col-1-3 {
+    width: 33.3333%;
+  }
+  /* Column Two Thirds */
+  .col-2-3 {
+    width: 66.6666%;
+  }
+  /* Do not display Bars */
+  .bars {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+  }
+  .navChild {
+    display: none;
+  }
+}

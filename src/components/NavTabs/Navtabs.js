@@ -1,53 +1,71 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./nav.css";
+import BackgroundImage from "../assets/Images/goodday.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navtabs = () => {
   const location = useLocation();
   return (
     <header>
-      <Link to='/'>ACN LOGO</Link>
+      <img className='background-image' src={BackgroundImage} alt='' />
+
       <nav className='navContainer'>
-        <li className='navChild'>
-          <Link
-            to='/'
-            className={
-              location.pathname === "/" ? "navChild active" : "nav-Child"
-            }
-          >
-            Home
+        <div>
+          <Link to='/' className='imageStyle'>
+            ACN LOGO
           </Link>
-        </li>
-        <li className='navChild'>
-          <Link
-            to='/about'
-            className={
-              location.pathname === "/about" ? "navChild active" : "navChild"
-            }
-          >
-            About
-          </Link>
-        </li>
-        <li className='navChild'>
-          <Link
-            to='/projects'
-            className={
-              location.pathname === "/projects" ? "navChild active" : "navChild"
-            }
-          >
-            Projects
-          </Link>
-        </li>
-        <li className='navChild'>
-          <Link
-            to='/contacts'
-            className={
-              location.pathname === "/contacts" ? "navChild active" : "navChild"
-            }
-          >
-            Contacts
-          </Link>
-        </li>
+        </div>
+        <p>
+          <FontAwesomeIcon icon={faBars} size='lg' className='bars' />
+        </p>
+        <ul>
+          <li className='navChild'>
+            <Link
+              to='/'
+              className={
+                location.pathname === "/" ? "navChild active" : "nav-Child"
+              }
+            >
+              Home
+            </Link>
+          </li>
+          <li className='navChild'>
+            <Link
+              to='/about'
+              className={
+                location.pathname === "/about" ? "navChild active" : "navChild"
+              }
+            >
+              About
+            </Link>
+          </li>
+          <li className='navChild'>
+            <Link
+              to='/projects'
+              className={
+                location.pathname === "/projects"
+                  ? "navChild active"
+                  : "navChild"
+              }
+            >
+              Projects
+            </Link>
+          </li>
+          <li className='navChild'>
+            <Link
+              to='/contacts'
+              className={
+                location.pathname === "/contacts"
+                  ? "navChild active"
+                  : "navChild"
+              }
+            >
+              Contacts
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
