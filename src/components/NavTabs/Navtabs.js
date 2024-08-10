@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./nav.css";
 import BackgroundImage from "../assets/Images/goodday.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navtabs = () => {
   const location = useLocation();
@@ -17,6 +17,7 @@ const Navtabs = () => {
             ACN LOGO
           </Link>
         </div>
+
         <p>
           <FontAwesomeIcon icon={faBars} size='lg' className='bars' />
         </p>
@@ -25,7 +26,7 @@ const Navtabs = () => {
             <Link
               to='/'
               className={
-                location.pathname === "/" ? "navChild active" : "nav-Child"
+                location.pathname === "/" ? "navChild active" : "not-active"
               }
             >
               Home
@@ -35,7 +36,9 @@ const Navtabs = () => {
             <Link
               to='/about'
               className={
-                location.pathname === "/about" ? "navChild active" : "navChild"
+                location.pathname === "/about"
+                  ? "navChild active"
+                  : "not-active"
               }
             >
               About
@@ -47,7 +50,7 @@ const Navtabs = () => {
               className={
                 location.pathname === "/projects"
                   ? "navChild active"
-                  : "navChild"
+                  : "not-active"
               }
             >
               Projects
@@ -59,13 +62,16 @@ const Navtabs = () => {
               className={
                 location.pathname === "/contacts"
                   ? "navChild active"
-                  : "navChild"
+                  : "not-active"
               }
             >
               Contacts
             </Link>
           </li>
         </ul>
+        <p>
+          <FontAwesomeIcon icon={faXmark} size='lg' className='faxMark' />
+        </p>
       </nav>
     </header>
   );

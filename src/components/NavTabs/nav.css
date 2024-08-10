@@ -2,7 +2,6 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
-
   position: relative;
 }
 .background-image {
@@ -32,51 +31,24 @@ ul li {
   justify-content: flex-end;
 }
 .navChild {
-  color: white;
+  color: var(--immaculate);
   padding: 1rem;
   font-style: italic;
+  text-decoration: none;
 }
-.bars {
+.navChild a {
+  text-decoration: none;
+}
+.bars,
+.faxMark {
   display: none;
 }
 
-/* /* header {
-  display: flex;
-  background: lightblue;
-  margin: 0;
-  justify-content: space-between;
-  padding: 1rem;
+.active {
+  color: var(--vegetation);
 }
-.navContainer {
-  display: flex;
-  list-style-type: none;
-  width: 50%;
-  justify-content: space-between;
-}
-.navContainer a:hover {
-  background-color: brown;
-} */
-/* 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-  flex-wrap: wrap;
+.not-active {
+  color: var(--immaculate);
 }
 
-header .navContainer {
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-}
-.navChild {
-  list-style-type: none;
-}
-.navChild > a {
-  text-decoration: none;
-  padding: 1rem;
-}
-header .navContainer a:hover {
-  background-color: blue;
-} */
+/* Toggle */
