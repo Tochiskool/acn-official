@@ -120,7 +120,7 @@ a:hover {
     background-color: var(--vegetation);
     gap: 1.5rem;
     transition: 1s;
-    transform: translateY(-100vh);
+    transform: translateX(-100vh);
     z-index: 2;
   }
   .faxMark {
@@ -129,7 +129,7 @@ a:hover {
     position: absolute;
     top: 15px;
     right: 15px;
-    display: none;
+    display: block;
   }
 }
 
